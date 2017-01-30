@@ -19,6 +19,8 @@ encountered.
 If you want your application to be friendly to your users and to SEO services,
 make your URLs friendlier. It only takes a couple steps, after all.
 
+NOTE: Do know that only non-instanceable portlets can work with friendly URLs.  Instanceable portlets will not be able to receive the friendly parameters defined in your `routes.xml`.  Make sure you set the following in your portlet properties: `com.liferay.portlet.instanceable=false`.
+
 ## Creating Friendly URL Routes [](id=creating-friendly-url-routes)
 
 1. First create a `routes.xml` file in your application's web module (if a
